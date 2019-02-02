@@ -21,6 +21,8 @@ public class TestFX extends Application {
     
     @Override
     public void start(Stage primaryStage) {
+        primaryStage.setTitle("FirstWindowedShieet");
+        primaryStage.setFullScreen(true);
         Button btn = new Button();
         btn.setText("Say 'Hello World'");
         btn.setOnAction(new EventHandler<ActionEvent>() {
@@ -36,7 +38,6 @@ public class TestFX extends Application {
         
         Scene scene = new Scene(root, 300, 250);
         
-        primaryStage.setTitle("Hello World!");
         primaryStage.setScene(scene);
         primaryStage.show();
     }
